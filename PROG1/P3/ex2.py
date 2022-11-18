@@ -1,4 +1,4 @@
-def posicao(i, j):
+def posicao(i: int, j: int) -> int:
     if (j == 0) or (j == i):
         return 1
 
@@ -6,7 +6,7 @@ def posicao(i, j):
         return int(posicao(i - 1, j - 1)) + int(posicao(i - 1, j))
 
 
-def pascal(linhas):
+def pascal(linhas: int) -> list:
     linhas = linhas + 1
     triangulo = []
 
@@ -21,9 +21,7 @@ def pascal(linhas):
 
 n = int(input())
 
-pascal = pascal(n)
-
-for i in pascal:
+for i in pascal(n):
     aux1 = 0 # contador de valores
     aux2 = (len(i) - 1)  # posição do ultimo valor da linha
     

@@ -39,4 +39,4 @@ for i in matriz:
             Y = matriz.index(i)
 
 print(f'Loja {indice+1}')
-print("Mês de menor venda: {}. Loja {}".format(meses[X], Y+1))
+print(f'Mês de menor venda: {meses[X]}. Loja {Y+1}')
